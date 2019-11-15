@@ -1,0 +1,44 @@
+<h1>Paso 1: Cargar Archivo</h1>
+<h3>El Archivo debe tener el formato .csv y debe contener dos columnas "Descripcion de la Actividad";"Tipo"; </h3>
+<h4>La columna Tipo puede contener los valores  cadena o foto </h4>
+<div align="center">
+
+    <form method="post" action="" enctype="multipart/form-data"
+          id="myform">
+
+        <div >
+
+            <input id="id_grupo" name="id_grupo" value="{{ID_GRUPO}}" style="display: none;" />
+            <input type="file" id="uploadedFile" name="uploadedFile" />
+            <input type="button" class="button" value="Upload Pasos"      id="but_upload">
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+   // $(document).ready(function() {
+        $("#but_upload").click(function() {
+            var fd = new FormData();
+            var files = $('#uploadedFile')[0].files[0];
+            fd.append('uploadedFile', files);
+            fd.append('id_grupo',$('#id_grupo').val());
+
+            $.ajax({
+                url: 'export-php/upload_ot.php',
+                type: 'post',
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(response){
+                    if(response != 0){
+                       // alert('file uploaded');
+                        form_grupo_add_pasos_ot($('#id_grupo').val());
+                    }
+                    else{
+                        alert('file not uploaded');
+                    }
+                }
+            });
+        });
+  //  });
+</script>

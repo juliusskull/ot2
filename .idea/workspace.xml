@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf42fb1a-8b76-4502-81e6-caf0b6d8225a" name="Default" comment="" />
+    <ignored path="ot2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ot2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="grupoOne.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/grupoOne.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="24" selection-start="4586" selection-end="5423" vertical-scroll-proportion="0.0" vertical-offset="2306" max-vertical-offset="3125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grupo_upload_pasos.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/grupo_upload_pasos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="35" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/export-php/upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="14" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1150">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload_ot.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/export-php/upload_ot.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="15" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1325">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grupoControler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controler/grupoControler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="23" selection-start="3364" selection-end="3373" vertical-scroll-proportion="0.0" vertical-offset="3015" max-vertical-offset="5250">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="204" column="0" selection-start="6047" selection-end="6047" vertical-scroll-proportion="0.0" vertical-offset="4824" max-vertical-offset="16875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pasos.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/pasos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="242" column="17" selection-start="6072" selection-end="6072" vertical-scroll-proportion="0.0" vertical-offset="5681" max-vertical-offset="8225">
+              <folding>
+                <marker date="1573590037990" expanded="true" signature="500:638" placeholder="{...}" />
+                <marker date="1573590037990" expanded="true" signature="559:593" placeholder="DELETE FROM ..." />
+                <marker date="1573590037990" expanded="true" signature="1000:1034" placeholder="select * fro..pasos..." />
+                <marker date="1573590037990" expanded="true" signature="1388:1451" placeholder="INSERT INTO ..." />
+                <marker date="1573590037990" expanded="true" signature="1884:1914" placeholder="SELECT max(_..pasos..." />
+                <marker date="1573590037990" expanded="true" signature="2526:2616" placeholder="INSERT INTO ..." />
+                <marker date="1573590037990" expanded="true" signature="2870:2900" placeholder="SELECT max(_..pasos..." />
+                <marker date="1573590037990" expanded="true" signature="4135:4211" placeholder="SELECT id_pa..pasos..." />
+                <marker date="1573590037990" expanded="true" signature="4804:4833" placeholder="SELECT max(_..pasos..." />
+                <marker date="1573590037990" expanded="true" signature="6476:6495" placeholder="{...}" />
+                <marker date="1573590037990" expanded="true" signature="7360:7434" placeholder="SELECT id_pa..pasos..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pasos_aux.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/pasos_aux.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="24" selection-start="814" selection-end="814" vertical-scroll-proportion="-10.3529415" vertical-offset="98" max-vertical-offset="850">
+              <folding>
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/asset/menu.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="8" selection-start="560" selection-end="560" vertical-scroll-proportion="0.05451128" vertical-offset="546" max-vertical-offset="1400">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pasosall.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/pasosall.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/css/leaflet.css" />
+        <option value="$PROJECT_DIR$/asset/sub_menu.json" />
+        <option value="$PROJECT_DIR$/app/seguridadControler.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/model/ot_finalizar_view.php" />
+        <option value="$PROJECT_DIR$/model/template_view.php" />
+        <option value="$PROJECT_DIR$/controler/template_viewControler.php" />
+        <option value="$PROJECT_DIR$/views/template_viewall.html" />
+        <option value="$PROJECT_DIR$/views/operarioall.html" />
+        <option value="$PROJECT_DIR$/views/operarioOne.html" />
+        <option value="$PROJECT_DIR$/controler/pasosControler.php" />
+        <option value="$PROJECT_DIR$/model/operario.php" />
+        <option value="$PROJECT_DIR$/controler/operarioControler.php" />
+        <option value="$PROJECT_DIR$/Nueva carpeta/js/index.js" />
+        <option value="$PROJECT_DIR$/views/creador.html" />
+        <option value="$PROJECT_DIR$/model/ot.php" />
+        <option value="$PROJECT_DIR$/controler/otControler-original.php" />
+        <option value="$PROJECT_DIR$/cache/ot1021390.html" />
+        <option value="$PROJECT_DIR$/views/ot_finalizar_viewall.html" />
+        <option value="$PROJECT_DIR$/busqueda-materiales/index.html" />
+        <option value="$PROJECT_DIR$/busqueda-materiales/creador.php" />
+        <option value="$PROJECT_DIR$/app/index.php" />
+        <option value="$PROJECT_DIR$/sincro.php" />
+        <option value="$PROJECT_DIR$/views/materiales_otall.html" />
+        <option value="$PROJECT_DIR$/model/ot_finalizada.php" />
+        <option value="$PROJECT_DIR$/views/materiales_otOne.html" />
+        <option value="$PROJECT_DIR$/pages/estadistico.html" />
+        <option value="$PROJECT_DIR$/controler/ot_finalizar_viewControler.php" />
+        <option value="$PROJECT_DIR$/views/ot_finalizar_viewOne.html" />
+        <option value="$PROJECT_DIR$/views/otall.html" />
+        <option value="$PROJECT_DIR$/db/database.php" />
+        <option value="$PROJECT_DIR$/controler/otControler.php" />
+        <option value="$PROJECT_DIR$/views/mapa.html" />
+        <option value="$PROJECT_DIR$/pages/index.html" />
+        <option value="$PROJECT_DIR$/model/materiales_ot.php" />
+        <option value="$PROJECT_DIR$/views/grupover.html" />
+        <option value="$PROJECT_DIR$/pages/grupover_lite.html" />
+        <option value="$PROJECT_DIR$/historico.php" />
+        <option value="$PROJECT_DIR$/model/grupo_x_ot.php" />
+        <option value="$PROJECT_DIR$/model/sincronizar.php" />
+        <option value="$PROJECT_DIR$/pages/mapa.html" />
+        <option value="$PROJECT_DIR$/export-php/upload.php" />
+        <option value="$PROJECT_DIR$/views/grupoOne.html" />
+        <option value="$PROJECT_DIR$/export-php/upload_ot.php" />
+        <option value="$PROJECT_DIR$/export-php/exe.php" />
+        <option value="$PROJECT_DIR$/model/pasos.php" />
+        <option value="$PROJECT_DIR$/controler/grupoControler.php" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/views/grupo_upload_pasos.html" />
+        <option value="$PROJECT_DIR$/views/pasos_aux.html" />
+        <option value="$PROJECT_DIR$/asset/menu.json" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asset" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ot2\export-php" />
+      <recent name="C:\xampp\htdocs\ot2\views" />
+      <recent name="C:\xampp\htdocs\ot2" />
+      <recent name="C:\xampp\htdocs\ot2\controler" />
+      <recent name="C:\xampp\htdocs\ot2\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp2\htdocs\ot2\ejemplo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf42fb1a-8b76-4502-81e6-caf0b6d8225a" name="Default" comment="" />
+      <created>1548186934447</created>
+      <updated>1548186934447</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2613293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12562814" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/seguridadControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="32" selection-start="655" selection-end="655" vertical-scroll-proportion="-11.5" vertical-offset="259" max-vertical-offset="825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/ot_finalizada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="106" selection-start="4653" selection-end="4653" vertical-scroll-proportion="-7.617647" vertical-offset="4366" max-vertical-offset="7050" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/materiales_otOne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="191" selection-start="1888" selection-end="1888" vertical-scroll-proportion="-13.970589" vertical-offset="200" max-vertical-offset="1600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/estadistico.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="83" selection-end="96" vertical-scroll-proportion="0.09259259" vertical-offset="0" max-vertical-offset="1175" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/ot_finalizadaControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="21" selection-start="918" selection-end="918" vertical-scroll-proportion="1.8518518" vertical-offset="0" max-vertical-offset="2850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="53" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ot_finalizar_viewOne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="85" selection-start="8753" selection-end="8753" vertical-scroll-proportion="-0.0" vertical-offset="3350" max-vertical-offset="4300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/ot_finalizar_viewControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="25" selection-start="2964" selection-end="2964" vertical-scroll-proportion="0.0" vertical-offset="2200" max-vertical-offset="6800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mapa2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1577" selection-end="1612" vertical-scroll-proportion="0.0" vertical-offset="429" max-vertical-offset="2075" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/templateControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/template_viewControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="33" selection-start="2928" selection-end="2928" vertical-scroll-proportion="-7.529412" vertical-offset="1994" max-vertical-offset="2875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/template_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="17" selection-start="3762" selection-end="3762" vertical-scroll-proportion="1.4705882" vertical-offset="4025" max-vertical-offset="5550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/otall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="27" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/creador.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="99" selection-start="3106" selection-end="3106" vertical-scroll-proportion="0.0" vertical-offset="3438" max-vertical-offset="5725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/creadorControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/otControler-original.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="26" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="3925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/otControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="9" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="533" max-vertical-offset="4950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/ot1021389.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="271" column="22" selection-start="12431" selection-end="12431" vertical-scroll-proportion="0.0" vertical-offset="6456" max-vertical-offset="7325" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="4472" max-vertical-offset="4975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sincro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="25" selection-start="2462" selection-end="2462" vertical-scroll-proportion="3.6764705" vertical-offset="2075" max-vertical-offset="3000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/otOne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2332" max-vertical-offset="3475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1229" max-vertical-offset="2850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="34" selection-start="2304" selection-end="2326" vertical-scroll-proportion="0.0" vertical-offset="1567" max-vertical-offset="13025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sweetalert/sweetalert-dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="34" selection-start="2192" selection-end="2192" vertical-scroll-proportion="0.0" vertical-offset="1835" max-vertical-offset="32250" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/sweetalert/sweetalert.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4679" selection-start="4674" selection-end="4679" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="0" selection-start="4618" selection-end="4618" vertical-scroll-proportion="0.0" vertical-offset="2586" max-vertical-offset="5800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mapa-11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="69" selection-start="1184" selection-end="1184" vertical-scroll-proportion="-4.5882354" vertical-offset="394" max-vertical-offset="1550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/grupover_lite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="31" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="4550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/grupover.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="31" selection-start="1587" selection-end="2140" vertical-scroll-proportion="0.0" vertical-offset="1325" max-vertical-offset="5125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/historico.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1700" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/grupo_x_ot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="0" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0" vertical-offset="2866" max-vertical-offset="5550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="223" column="19" selection-start="8578" selection-end="8590" vertical-scroll-proportion="0.0" vertical-offset="5406" max-vertical-offset="5925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mapa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="22" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0" vertical-offset="422" max-vertical-offset="1625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/pasosControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/sincronizar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="326" column="2" selection-start="8658" selection-end="8658" vertical-scroll-proportion="-5.382353" vertical-offset="7967" max-vertical-offset="10175" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/grupo_upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="71" selection-start="283" selection-end="283" vertical-scroll-proportion="2.4411764" vertical-offset="258" max-vertical-offset="1100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/grupo_otOne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mapa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="23" selection-start="1343" selection-end="1343" vertical-scroll-proportion="-3.764706" vertical-offset="547" max-vertical-offset="1650" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/materiales_ot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="6" selection-start="4157" selection-end="4157" vertical-scroll-proportion="-125.73529" vertical-offset="0" max-vertical-offset="5700" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export-php/exe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="800" max-vertical-offset="1175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pasosall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/grupoOne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="24" selection-start="4586" selection-end="5423" vertical-scroll-proportion="0.0" vertical-offset="2306" max-vertical-offset="3125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/pasos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="17" selection-start="6072" selection-end="6072" vertical-scroll-proportion="0.0" vertical-offset="5681" max-vertical-offset="8225">
+          <folding>
+            <marker date="1573590037990" expanded="true" signature="500:638" placeholder="{...}" />
+            <marker date="1573590037990" expanded="true" signature="559:593" placeholder="DELETE FROM ..." />
+            <marker date="1573590037990" expanded="true" signature="1000:1034" placeholder="select * fro..pasos..." />
+            <marker date="1573590037990" expanded="true" signature="1388:1451" placeholder="INSERT INTO ..." />
+            <marker date="1573590037990" expanded="true" signature="1884:1914" placeholder="SELECT max(_..pasos..." />
+            <marker date="1573590037990" expanded="true" signature="2526:2616" placeholder="INSERT INTO ..." />
+            <marker date="1573590037990" expanded="true" signature="2870:2900" placeholder="SELECT max(_..pasos..." />
+            <marker date="1573590037990" expanded="true" signature="4135:4211" placeholder="SELECT id_pa..pasos..." />
+            <marker date="1573590037990" expanded="true" signature="4804:4833" placeholder="SELECT max(_..pasos..." />
+            <marker date="1573590037990" expanded="true" signature="6476:6495" placeholder="{...}" />
+            <marker date="1573590037990" expanded="true" signature="7360:7434" placeholder="SELECT id_pa..pasos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controler/grupoControler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="23" selection-start="3364" selection-end="3373" vertical-scroll-proportion="0.0" vertical-offset="3015" max-vertical-offset="5250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="0" selection-start="6047" selection-end="6047" vertical-scroll-proportion="0.0" vertical-offset="4824" max-vertical-offset="16875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/grupo_upload_pasos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="35" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export-php/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="14" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export-php/upload_ot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="15" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pasos_aux.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="814" selection-end="814" vertical-scroll-proportion="-10.3529415" vertical-offset="98" max-vertical-offset="850">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/menu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="560" selection-end="560" vertical-scroll-proportion="0.05451128" vertical-offset="546" max-vertical-offset="1400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

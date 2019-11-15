@@ -1,0 +1,154 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                 OT Nro {{ CAMPOS.ot|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="ot_finalizar_view">
+    <input type="hidden" name="accion" value="add">
+    <div class="form-group form-float oculto">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="ot" name="ot" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.ot|e }}">
+                                            <label class="form-label">ot</label>
+                                        </div>
+                                    </div>
+                                        <div class="form-line">
+                                           <label class="form-label">FECHA INICIO: {{ CAMPOS.FECHA_INICIO|e }}</label>
+                                           <label class="form-label">FECHA FINALIZO: {{ CAMPOS.FECHA_FINALIZO|e }}</label>
+
+                                           <input type="text" class="form-control input-control oculto" id="FECHA_INICIO" name="FECHA_INICIO" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.FECHA_INICIO|e }}">
+                                           <input type="text" class="form-control input-control oculto" id="FECHA_FINALIZO" name="FECHA_FINALIZO" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.FECHA_FINALIZO|e }}">
+
+                                        </div>
+                                        <div class="form-line">
+                                            <label class="form-label">Motivo</label>
+                                            <textarea class="form-control input-control" id="MOT_OT" name="MOT_OT" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.MOT_OT|e }}">{{ CAMPOS.MOT_OT|e }}</textarea>
+
+                                        </div>
+
+                                        <div class="form-line  oculto">
+                                            <label class="form-label">MOT</label>
+                                           <input type="number" class="form-control input-control" id="MOT" name="MOT" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.MOT|e }}">
+
+                                        </div>
+
+                                        <div class="form-line">
+                                            <label class="form-label">LAT Final:{{ CAMPOS.LAT|e }}</label>
+                                            <label class="form-label">LNG Final:{{ CAMPOS.LON|e }}</label>
+                                           <input type="text" class="form-control input-control oculto" id="LAT" name="LAT" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.LAT|e }}">
+                                           <input type="text" class="form-control input-control oculto" id="LON" name="LON" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.LON|e }}">
+                                            <button type="button"class="btn btn-primary" onclick="window.open('https://www.google.com/maps/@{{ CAMPOS.LAT|e }},{{ CAMPOS.LON|e }},15z')">Ver</button>
+                                        </div>
+
+                                        <div class="form-line">
+                                            <label class="form-label">LAT INI:{{ CAMPOS.LAT_INI|e }}</label>
+                                            <label class="form-label">LNG INI:{{ CAMPOS.LON_INI|e }}</label>
+                                            <input type="text" class="form-control input-control oculto" id="LAT_INI" name="LAT_INI" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.LAT_INI|e }}">
+                                            <input type="text" class="form-control input-control oculto" id="LON_INI" name="LON_INI" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.LON_INI|e }}">
+                                            <button type="button"class="btn btn-primary" onclick="window.open('https://www.google.com/maps/@{{ CAMPOS.LAT_INI|e }},{{ CAMPOS.LON_INI|e }},15z')">Ver</button>
+
+                                        </div>
+
+
+
+                                        <div class="form-line oculto">
+                                           <input type="text" class="form-control input-control" id="C" name="C" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.C|e }}">
+                                            <label class="form-label">C</label>
+                                        </div>
+
+                                        <div class="form-line">
+                                            <label class="form-label">OBS</label>
+                                           <textarea class="form-control input-control" id="OBS" name="OBS" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.OBS|e }}">{{ CAMPOS.OBS|e }}</textarea>
+
+                                        </div>
+
+                                        <div class="form-line">
+                                            <label class="form-label">direccion</label>
+                                           <input type="text" class="form-control input-control" id="direccion" name="direccion" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.direccion|e }}">
+
+                                        </div>
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">ACTUAL</label>
+                                           <input type="text" class="form-control input-control" id="ACTUAL" name="ACTUAL" aria-describedby="emailHelp"  placeholder="" required value="{{ CAMPOS.ACTUAL|e }}">
+
+                                        </div>
+
+
+
+                                        <div class="form-line oculto">
+                                           <input type="text" class="form-control input-control" id="capataz" name="capataz" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.capataz|e }}">
+                                            <label class="form-label">capataz</label>
+                                        </div>
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">equipos</label>
+                                           <input type="number" class="form-control input-control" id="equipos" name="equipos" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.equipos|e }}">
+
+                                        </div>
+
+                                        <div class="form-line oculto">
+                                           <input type="text" class="form-control input-control" id="legajo" name="legajo" aria-describedby="emailHelp"  placeholder="" required value="{{ CAMPOS.legajo|e }}">
+                                            <label class="form-label">Usuario</label>
+                                        </div>
+
+                                        <div class="form-line oculto">
+                                           <input type="text" class="form-control input-control" id="movil" name="movil" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.movil|e }}">
+                                            <label class="form-label">movil</label>
+                                        </div>
+    <div class="form-line">
+        <label class="form-label">Actividades Realizadas1</label>
+        <input class="oculto" id="id_lista_activiades" value="1" >
+
+        <table id="lista_actividades" style="width:100%">
+            <tr>
+
+                <th>Actividad</th>
+                <th>Tipo</th>
+                <th>Valor</th>
+                <th>Realizado</th>
+            </tr>
+            {% for estado in PASOS %}
+            <tr>
+
+                <td>{{estado.desc_campo}}</td>
+                <td>{{estado.tipo}}</td>
+                <td>{{estado.valor}}</td>
+                <td>{{estado.REALIZADO}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+    <div class="form-line">
+        <label class="form-label">Fotos Realizadas</label>
+        <input class="oculto" id="id_lista_fotos" value="1" >
+
+
+            <a  href="app/index.php?tabla=ot_finalizar_view&accion=descarga&id={{ CAMPOS.ot|e }}" class="btn btn-primary" >Descargar</a>
+
+        <table id="lista_fotos" style="width:100%">
+            <tr>
+
+                <th>Fotos</th>
+
+            </tr>
+            {% for estado in IMAGENES %}
+            <tr>
+
+                <td>
+                    <a target="_blank" rel="noopener noreferrer" href="img/{{estado}}"> <img id="myImg" src="img/{{estado}}" alt="Snow" style="width:100%;max-width:300px"></a>
+                </td>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+                                    <button  class="btn btn-primary oculto" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('ot_finalizar_view')">Regresar</a></form></div>
+</div>
+        </div>

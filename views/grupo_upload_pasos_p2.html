@@ -1,0 +1,55 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Pasos Asignados
+            </h2>
+            <ul class="header-dropdown m-r--5">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <!--<li><a href="javascript:void(0);">Action</a></li>
+                        <li><a href="javascript:void(0);">Another action</a></li>
+                        <li><a href="javascript:void(0);">Something else here</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <div id="lista_pasos_ot_div" class="list-unstyled row clearfix">
+
+                <div class="col-md-12">
+
+                    <table id="lista_pasos_ot"  class="table table-bordered table-striped table-hover js-basic-example dataTable" style="width:100%">
+                        <thead>
+                        <tr>
+                            <th>OT</th>
+                            <th>Descripcion</th>
+                            <th>Tipo</th>
+                            <th>Valor</th>
+                            <th>Realizado</th>
+                            <th>Fecha Alta</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for key,paso in PASOS %}
+                        <tr>
+                            <td>{{paso.OT}}</td>
+                            <td>{{paso.desc_campo}}</td>
+                            <td>{{paso.tipo}}</td>
+                            <td>{{paso.valor}}</td>
+                            <td>{{paso.REALIZADO}}</td>
+                            <td>{{paso.fchalta}}</td>
+
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

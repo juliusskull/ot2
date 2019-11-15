@@ -1,0 +1,46 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Grupo Nro {{ CAMPOS.id_grupo|e }}
+            </h2>
+        </div><div class="body">
+<!--<form id="myForm" action="app/" method="post">-->
+        <div>
+<input type="hidden" name="tabla" value="grupo">
+            <input type="hidden" name="accion" value="add"><div class="form-group form-float">
+                                        <div class="form-line" style ="display:none">
+                                           <input type="number" class="form-control input-control" id="id_grupo" name="id_grupo" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id_grupo|e }}">
+                                            <label class="form-label">idGrupo</label>
+                                        </div>
+                                    </div>
+
+                                        <div class="form-line">
+                                            <label class="form-label">Descripcion</label>
+                                           <input type="text" class="form-control input-control" id="descripcion" name="descripcion" aria-describedby="emailHelp"  placeholder="" required value="{{ CAMPOS.descripcion|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line" style ="display:none">
+                                            <label class="form-label">Fecha de Alta</label>
+                                           <input type="text" class="form-control input-control" id="fchalta" name="fchalta" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.fchalta|e }}">
+
+                                        </div>
+
+            <hr style="margin-left: 0;    text-align: left;    width: 50%;"/>
+    <!--<button  class="btn btn-primary" >Agregar Orden de trabajo (recien creada o iniciada)</button>-->
+
+             <hr style="margin-left: 0;    text-align: left;    width: 50%;"/>
+<!-------------------------------------------------------------------------------------->
+
+
+
+    <button  class="btn btn-primary" onclick="add_grupo()">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('grupo')">Regresar</a>
+</div>
+    </div>
+</div>
+        </div>
+
+
+<!-- Bootstrap Core Js -->

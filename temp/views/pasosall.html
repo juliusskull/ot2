@@ -1,0 +1,17 @@
+<div class="body">
+    <div class="table-responsive">
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th>#</th>
+<th>Desc Campo</th>
+<th>Tipo</th>
+<th>Foto</th>
+<th>Obligatorio</th>
+<th></th></thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr><td>{{num._id}}</td><td>{{num.desc_campo}}</td><td>{{num.tipo}}</td><td>{{num.foto}}</td><td>{{num.obligatorio}}</td><td><button type="button" class="btn btn-default" onclick="ver_form('pasos',{{num._id}})"><span class="glyphicon glyphicon-search"></span></button><button type="button" class="btn btn-primary" onclick="ver_form_modificar('pasos',{{num._id}})"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-danger" onclick="borrar('pasos',{{num._id}})"><span class="glyphicon glyphicon-remove"></span></button></td></tr>{% endfor %}
+</tbody>
+</table>
+</div>
+</div>

@@ -1,0 +1,28 @@
+<div class="body">
+    <div class="table-responsive">
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th>id</th>
+<th>envio</th>
+<th>tipo</th>
+<th>valor</th>
+<th>lat</th>
+<th>lng</th>
+<th>fchalta</th>
+<th>usuario</th>
+<th>imei</th>
+<th>precision</th>
+<th>gps</th>
+<th>red</th>
+<th>version</th>
+<th>aplicacion</th>
+<th></th></thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr><td>{{num.id}}</td><td>{{num.envio}}</td><td>{{num.tipo}}</td><td>{{num.valor}}</td><td>{{num.lat}}</td><td>{{num.lng}}</td><td>{{num.fchalta}}</td><td>{{num.usuario}}</td><td>{{num.imei}}</td><td>{{num.precision}}</td><td>{{num.gps}}</td><td>{{num.red}}</td><td>{{num.version}}</td><td>{{num.aplicacion}}</td><td><button type="button" class="btn btn-default"
+    onclick="window.open('https://www.google.com/maps/@{{num.lat}},{{num.lng}},15z')">
+    <span class="glyphicon glyphicon-search"></span></button></td></tr>{% endfor %}
+</tbody>
+</table>
+    </div>
+    </div>

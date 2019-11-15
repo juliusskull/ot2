@@ -1,0 +1,59 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                # {{ CAMPOS.id_material_ot|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="materiales_ot">
+                    <input type="hidden" name="accion" value="add">
+                                  <div class="form-group form-float oculto">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="id_material_ot" name="id_material_ot" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id_material_ot|e }}">
+                                            <label class="form-label">idMaterialOt</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">codigo</label>
+
+                                            <input type="text" class="form-control input-control" id="codigo" name="codigo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.codigo|e }}">
+                                         </div>
+                                    </div>
+                                    <div class="form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">Materiales Descripcion</label>
+
+                                            <input type="text" class="form-control input-control" id="desc_material" name="desc_material" aria-describedby="emailHelp"  placeholder="" disabled value="{{ CAMPOS.desc_material|e }}">
+                                        </div>
+                                    </div>
+                                    <div class="form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">ot</label>
+                                           <input type="text" class="form-control input-control" id="ot" name="ot" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.ot|e }}">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">cantidad</label>
+                                            <input type="text" class="form-control input-control" id="cantidad" name="cantidad" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.cantidad|e }}">
+                                               </div>
+                                    </div>
+                                    <div class="form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">usuario</label>
+                                            <input type="text" class="form-control input-control" id="usuario" name="usuario" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.usuario|e }}">
+                                           </div>
+                                    </div>
+                                        <div class="form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">fchalta</label>
+
+                                            <input type="text" class="form-control input-control" id="fchalta" name="fchalta" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.fchalta|e }}">
+                                             </div>
+                                    </div>
+                        <button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('materiales_ot')">Regresar</a></form></div>
+</div>
+        </div>

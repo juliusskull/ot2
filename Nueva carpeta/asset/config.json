@@ -1,0 +1,12 @@
+{
+"TITULO": "Lista de Actividades",
+"TITULO_BAR": "Lista de Actividades",
+"ANIO": "2019",
+"SUB_TITULO_LOGIN":"debes autenticar tu usuario",
+"NOSOTROS": "NOS",
+"VERSION": "1.0",
+"LOGIN_VALIDACION":"index.php",
+"ALERTA_AJAX": "Espere por favor"
+    ,"MENU_PERSONAL":[{"TITULO":"Profile","URL":"#","ICONO":"person"}, {"TITULO":"Sign Out","URL":"login.php","ICONO":"input"}]
+}
+

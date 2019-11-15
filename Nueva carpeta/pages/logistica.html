@@ -1,0 +1,125 @@
+<section class="content">
+<div class="container-fluid">
+<div class="block-header">
+    <h2>
+        FORM WIZARD
+        <small>Taken from <a href="https://github.com/rstaib/jquery-steps" target="_blank">github.com/rstaib/jquery-steps</a> & <a href="https://jqueryvalidation.org/" target="_blank">jqueryvalidation.org</a></small>
+    </h2>
+</div>
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>ADVANCED FORM EXAMPLE WITH VALIDATION</h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);">Action</a></li>
+                            <li><a href="javascript:void(0);">Another action</a></li>
+                            <li><a href="javascript:void(0);">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <form id="wizard_with_validation" method="POST">
+                    <h3>Account Information</h3>
+                    <fieldset>
+
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" list="lista-clientes" class="form-control" name="cliente"  id="cliente"  style='text-transform:uppercase' required>
+                                <label class="form-label">Cliente 1*</label>
+                                <datalist id="lista-clientes" >
+                                    {% for num in CLIENTES %}
+                                    <option value="{{num.razon_social}}">
+                                        {% endfor %}
+
+                                </datalist>
+
+                            </div>
+                        </div>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" list="lista-origen" class="form-control" style='text-transform:uppercase' name="origen" id="origen" required>
+
+                                <datalist id="lista-origen" >
+                                    {% for num in DESTINOS %}
+                                    <option value="{{num.DESC_DESTINO}}">
+                                    {% endfor %}
+
+                                </datalist>
+
+                                <label class="form-label">Origen 1*</label>
+                            </div>
+                        </div>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" list="lista-destino" class="form-control" style='text-transform:uppercase' name="destino" id="destino" required>
+                                <datalist id="lista-destino" >
+
+                                    {% for num in DESTINOS %}
+                                     <option value="{{num.DESC_DESTINO}}">
+                                    {% endfor %}
+
+                                </datalist>
+                                <label class="form-label">Destino*</label>
+                            </div>
+                        </div>
+
+
+                        </fieldset>
+
+
+                    <h3>Profile Information</h3>
+                    <fieldset>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" name="name" class="form-control" required>
+                                <label class="form-label">First Name*</label>
+                            </div>
+                        </div>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="text" name="surname" class="form-control" required>
+                                <label class="form-label">Last Name*</label>
+                            </div>
+                        </div>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="email" name="email" class="form-control" required>
+                                <label class="form-label">Email*</label>
+                            </div>
+                        </div>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <textarea name="address" cols="30" rows="3" class="form-control no-resize" required></textarea>
+                                <label class="form-label">Address*</label>
+                            </div>
+                        </div>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input min="18" type="number" name="age" class="form-control" required>
+                                <label class="form-label">Age*</label>
+                            </div>
+                            <div class="help-info">The warning step will show up if age is less than 18</div>
+                        </div>
+                    </fieldset>
+
+                    <h3>Terms & Conditions - Finish</h3>
+                    <fieldset>
+                        <input id="acceptTerms-2" name="acceptTerms" type="checkbox" required>
+                        <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #END# Advanced Form Example With Validation -->
+</div>
+</section>

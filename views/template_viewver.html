@@ -1,0 +1,39 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Template  Nro {{ CAMPOS.id|e }}
+            </h2>
+        </div>
+        <div class="body">
+<table>
+    <tr><td><h3>Motivo:</h3></td><td><h3>{{ CAMPOS.motivo|e }}</h3></td></tr>
+
+<table>
+    <div class="form-line">
+        <label class="form-label">Actividades Realizadas</label>
+        <input class="oculto" id="id_lista_activiades" value="1" >
+
+        <table id="lista_actividades" style="width:100%">
+            <tr>
+
+                <th>Actividad</th>
+                <th>Tipo</th>
+            </tr>
+            {% for estado in PASOS %}
+            <tr>
+
+                <td>{{estado.desc_campo}}</td>
+                <td>{{estado.tipo}}</td>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+   <button  class="btn btn-primary" onclick="ver_tabla('template_view')">Regresar</button>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead>
+<tr>
+<th></th>
+<th>ot</th>
+<th>MOT OT</th>
+<th>FECHA INICIO</th>
+<th>FECHA FINALIZO</th>
+<th>MOT</th>
+<th>LAT</th>
+<th>LON</th>
+<th>LAT INI</th>
+<th>LON INI</th>
+<th>OBS</th>
+<th>Direccion</th>
+<th>ACTUAL</th>
+<th>Usuario</th>
+
+</thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr>
+    <td><button type="button" class="btn btn-default" onclick="ver_form('ot_finalizar_view','')"><span class="glyphicon glyphicon-search"></span></button><button type="button" class="btn btn-primary" onclick="ver_form_modificar('ot_finalizar_view',{{num.ot}})"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-danger" onclick="borrar('ot_finalizar_view',{{num.ot}})"><span class="glyphicon glyphicon-remove"></span></button></td>
+    <td>{{num.ot}}</td>
+    <td>{{num.MOT_OT}}</td>
+    <td>{{num.FECHA_INICIO}}</td>
+    <td>{{num.FECHA_FINALIZO}}</td>
+    <td>{{num.MOT}}</td>
+    <td>{{num.LAT}}</td>
+    <td>{{num.LON}}</td>
+    <td>{{num.LAT_INI}}</td>
+    <td>{{num.LON_INI}}</td>
+    <td>{{num.OBS}}</td>
+    <td>{{num.direccion}}</td>
+    <td>{{num.ACTUAL}}</td>
+    <td>{{num.legajo}}</td>
+
+</tr>{% endfor %}
+</tbody>
+</table>

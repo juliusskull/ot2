@@ -1,0 +1,29 @@
+<h1>Paso 2: Vincular con Operarios</h1>
+<h3>Es obligatoria la vinculaci&oacute;n de cada actividad con los operarios</h3>
+<table id="lista_pasos_ot" style="width:100%">
+    <tr>
+        <td>#</td>
+        <th>Descripcion</th>
+        <th>Tipo</th>
+        <th>Operario</th>
+    </tr>
+    {% for estado in LISTA_PASOS %}
+    <tr id="filaPasos{{estado.id}}">
+        <td>{{estado.id}}</td>
+        <td id="descripcion{{estado.id}}">{{estado.desc_campo}}</td>
+        <td  id="tipo{{estado.id}}">{{estado.tipo}}</td>
+        <td>  <select id="lista_empleado{{estado.id}}" name="lista_empleado{{estado.id}}" class="form-control">
+            <option value="0" >Selecciones un operario</option>
+            {% for ee in EMPLEADOS %}
+            <option value="{{ee.id}}" >{{ee.nombre}}</option>
+            {% endfor %}
+
+        </select>
+        </td>
+
+    </tr>
+    {% endfor %}
+    <button  class="btn btn-primary" onclick="enviar_actividades_paso({{ID_GRUPO}})" >Agregar</button>
+    <button  class="btn btn-primary" onclick="ver_form_modificar('grupo',{{ID_GRUPO}})" >Volver</button>
+
+</table>

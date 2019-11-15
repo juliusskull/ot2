@@ -1,0 +1,134 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Ot Nro {{ CAMPOS.id|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="ot"><input type="hidden" name="accion" value="add">
+    <div class="form-group form-float oculto">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="id" name="id" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id|e }}">
+                                            <label class="form-label">id</label>
+                                        </div>
+    </div>
+
+
+                                    <div class="form-line">
+                                        <label for="contratista_asig">Template Titulo</label>
+                                        <select id="contratista_asig" name="contratista_asig" class="form-control">
+                                            <option value="{{ CAMPOS.id_template|e }}" >{{ CAMPOS.template_titulo|e }}</option>
+                                            {% for estado in TEMPLATES %}
+                                            <option value="{{estado.id_template}}" >{{estado.titulo}}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">Nro Ot</label>
+                                           <input type="number" class="form-control input-control" id="nro_ot" name="nro_ot" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.nro_ot|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">idLoc</label>
+                                           <input type="number" class="form-control input-control" id="id_loc" name="id_loc" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_loc|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">localidad</label>
+                                           <input type="text" class="form-control input-control" id="localidad" name="localidad" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.localidad|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">zona</label>
+                                           <input type="text" class="form-control input-control" id="zona" name="zona" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.zona|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">idBar</label>
+                                           <input type="number" class="form-control input-control" id="id_bar" name="id_bar" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_bar|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">barrio</label>
+                                           <input type="text" class="form-control input-control" id="barrio" name="barrio" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.barrio|e }}">
+
+                                        </div>
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">idCal</label>
+                                           <input type="number" class="form-control input-control" id="id_cal" name="id_cal" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_cal|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">Calle</label>
+                                           <input type="text" class="form-control input-control" id="calle" name="calle" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.calle|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">Altura</label>
+                                           <input type="text" class="form-control input-control" id="altura" name="altura" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.altura|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">idMotivo</label>
+                                           <input type="number" class="form-control input-control" id="id_motivo" name="id_motivo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_motivo|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line ">
+                                            <label class="form-label">motivo</label>
+                                           <input type="text" class="form-control input-control" id="motivo" name="motivo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.motivo|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line"><label class="form-label">codEmpleadoAsig</label>
+                                           <input type="number" class="form-control input-control" id="cod_empleado_asig" name="cod_empleado_asig" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.cod_empleado_asig|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">Nombre Empleado Asig</label>
+                                           <input type="text" class="form-control input-control" id="nombre_empleado_asig" name="nombre_empleado_asig" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.nombre_empleado_asig|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">Cod Cuadrilla Asig</label>
+                                           <input type="number" class="form-control input-control" id="cod_cuadrilla_asig" name="cod_cuadrilla_asig" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.cod_cuadrilla_asig|e }}">
+
+                                        </div>
+
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">fchalta</label>
+                                           <input type="text" class="form-control input-control" id="fchalta" name="fchalta" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.fchalta|e }}">
+
+
+                                    </div>
+    <button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('ot')">Regresar</a></form></div>
+</div>
+        </div>

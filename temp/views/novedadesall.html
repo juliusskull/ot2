@@ -1,0 +1,26 @@
+<div class="body">
+    <div class="table-responsive">
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th>#</th>
+<th>sucursal_id</th>
+<th>moneda</th>
+<th>tipo</th>
+<th></th></thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr>
+    <td>{{num.id_novedad}}</td><td>{{num.sucursal_id}}</td><td>{{num.moneda}}</td><td>{{num.tipo}}</td>
+    <td>
+        <select id="novedad-{{num.id_novedad}}">
+            <option selected value="CON STOCK">CON STOCK</option>
+            <option value="SIN STOCK">SIN STOCK</option>
+        </select>
+
+    </td>
+</tr>{% endfor %}
+</tbody>
+</table>
+    </div>
+</div>
+

@@ -1,0 +1,51 @@
+[
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "grupo",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('grupo')"
+    },
+
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Tareas",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('ot')"
+    }
+    ,
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Tareas Finalizadas",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('ot_finalizar_view')"
+    }   
+        ,
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Operarios",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('operario')"
+    }
+    ,
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Historial de Ubicacion",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_mapa_filtro(0)"
+    }
+    ,
+
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Template",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('template_view')"
+    }
+
+]

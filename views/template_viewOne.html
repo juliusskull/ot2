@@ -1,0 +1,26 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Template_view Nro {{ CAMPOS.|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="template_view"><input type="hidden" name="accion" value="add"><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="id" name="id" aria-describedby="emailHelp"  placeholder="" required value="{{ CAMPOS.id|e }}">
+                                            <label class="form-label">id</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="motivo" name="motivo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.motivo|e }}">
+                                            <label class="form-label">motivo</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="cantidad_pasos" name="cantidad_pasos" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.cantidad_pasos|e }}">
+                                            <label class="form-label">cantidadPasos</label>
+                                        </div>
+                                    </div><button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('template_view')">Regresar</a></form></div>
+</div>
+        </div>

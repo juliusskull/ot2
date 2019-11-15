@@ -1,0 +1,70 @@
+<style>
+    .hm-gradient {
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    }
+    .darken-grey-text {
+        color: #2E2E2E;
+    }
+</style>
+<table>
+    <tr><td>id_grupo</td><td>{{ CAMPOS.id_grupo|e }}</td></tr><tr><td>descripcion</td><td>{{ CAMPOS.descripcion|e }}</td></tr><tr><td>fchalta</td><td>{{ CAMPOS.fchalta|e }}</td></tr>
+<table>
+   <!-- <img src="img_girl.jpg" alt="Girl in a jacket">-->
+
+
+
+    {% for cavecera in LISTA_OT %}
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <div class="card">
+           <div class="header">
+               <h2>
+                   OT Nro {{cavecera.nro_ot}}
+               </h2>
+               <ul class="header-dropdown m-r--5">
+                   <li class="dropdown">
+                       <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                           <i class="material-icons">more_vert</i>
+                       </a>
+                       <ul class="dropdown-menu pull-right">
+                           <li><a href="javascript:void(0);">Action</a></li>
+                           <li><a href="javascript:void(0);">Another action</a></li>
+                           <li><a href="javascript:void(0);">Something else here</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </div>
+           <div class="body">
+               <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
+                   {% for estado in IMAGENES %}
+                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                       <a href="img/{{estado.NOMBRE}}" data-sub-html="Demo Description">
+                           <img class="img-responsive thumbnail" src="img/{{estado.NOMBRE}}">
+                       </a>
+                   </div>
+                   {% endfor %}
+               </div>
+           </div>
+       </div>
+   </div>
+   </div>
+
+    {% endfor %}
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+
+
+
+
+
+
+    <button  class="btn btn-primary" onclick="ver_tabla('grupo')">Regresar</button>

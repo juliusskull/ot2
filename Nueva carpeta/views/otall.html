@@ -1,0 +1,35 @@
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th></th>
+<th>#</th>
+<th>motivo</th>
+<th>zona</th>
+<th>barrio</th>
+<th>calle</th>
+<th>altura</th>
+<th>cod_empleado_asig</th>
+<th>nombre_empleado_asig</th>
+<th>cod_cuadrilla_asig</th>
+<th>Template Titulo</th>
+<th>fchalta</th>
+
+</thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr>
+    <td><button type="button" class="btn btn-default" onclick="ver_form('ot',{{num.id}})"><span class="glyphicon glyphicon-search"></span></button><button type="button" class="btn btn-primary" onclick="ver_form_modificar('ot',{{num.id}})"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-danger" onclick="borrar('ot',{{num.id}})"><span class="glyphicon glyphicon-remove"></span></button></td>
+    <td>{{num.id}}</td>
+    <td>{{num.motivo}}</td>
+    <td>{{num.zona}}</td>
+    <td>{{num.barrio}}</td>
+    <td>{{num.calle}}</td>
+    <td>{{num.altura}}</td>
+    <td>{{num.cod_empleado_asig}}</td>
+    <td>{{num.nombre_empleado_asig}}</td>
+    <td>{{num.cod_cuadrilla_asig}}</td>
+    <td>{{num.template_titulo}}</td>
+    <td>{{num.fchalta}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

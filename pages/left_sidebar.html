@@ -1,0 +1,97 @@
+<!-- Left Sidebar -->
+<aside id="leftsidebar" class="sidebar">
+    <!-- User Info -->
+    <div class="user-info">
+        <div class="image">
+            <img src="images/user.png" width="48" height="48" alt="User" />
+        </div>
+        <div class="info-container">
+            <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{USUARIO}}</div>
+
+            <div class="btn-group user-helper-dropdown">
+                <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                <ul class="dropdown-menu pull-right">
+                    {% for num in SISTEMA.MENU_PERSONAL %}
+                    <li> <a href="{{num.URL}}"><i class="material-icons">{{num.ICONO}}</i>{{num.TITULO}}</a></li>
+                    {% endfor %}
+                    <!--
+                    <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                    <li role="seperator" class="divider"></li>
+                    <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- #User Info -->
+    <!-- Menu -->
+    <div class="menu">
+        <ul class="list">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="menu-navegar active">
+                <a href="index.php">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </a>
+            </li>
+            {% if PERMISO>0 %}
+                {% for num in MENU %}
+                <li class="menu-navegar">
+                    <a href="{{num.link}}" onClick="{{num.click}}"><i class="material-icons">{{num.icono}}</i><span>{{num.descripcion}}</span></a>
+                </li>
+                {% endfor %}
+            {% endif %}
+            {% for menu in MENU_CONFIGURACION %}
+
+                {% if PERMISO>menu.permisos %}
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block">
+                        <i class="material-icons">{{menu.icono}}</i>
+                        <span>{{menu.titulo}}</span>
+                    </a>
+                    <ul class="ml-menu" >
+                        <li >
+                            {% for num in menu.items %}
+                            <a href="javascript:void(0);" onClick="{{num.click}}" class="toggled waves-effect waves-block">{{num.descripcion}}</a>
+                            {% endfor %}
+                        </li>
+
+
+                    </ul>
+                </li>
+                {% endif %}
+            {% endfor %}
+
+            {% if PERMISO>2%}
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block">
+                    <i class="material-icons">view_list</i>
+                    <span>Tablas</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        {% for num in SUB_MENU %}
+                        <a href="javascript:void(0);" onClick="ver_tabla('{{num.TABLA}}')" class="toggled waves-effect waves-block">{{num.TABLA_DESC}}</a>
+                        {% endfor %}
+                    </li>
+
+
+                </ul>
+                </li>
+                {% endif %}
+
+        </ul>
+    </div>
+    <!-- #Menu -->
+    <!-- Footer -->
+    <div class="legal">
+        <div class="copyright">
+            &copy; {{SISTEMA.ANIO}} <a href="javascript:void(0);">{{SISTEMA.NOSOTROS}}</a>.
+        </div>
+        <div class="version">
+            <b>Version: </b> {{SISTEMA.VERSION}}
+        </div>
+    </div>
+    <!-- #Footer -->
+</aside>
+<!-- #END# Left Sidebar -->

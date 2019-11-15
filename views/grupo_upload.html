@@ -1,0 +1,39 @@
+<h1>Paso 1: Cargar Archivo csv</h1>
+<h3>El Archivo debe tener el formato .csv y debe contener dos columnas "Descripcion del material";"Cantidad"; </h3>
+<h3>Sin incluir las cabecera</h3>
+    <form method="post" action="" enctype="multipart/form-data"
+          id="myform">
+        <div>
+            <input type="hidden" id="id_grupo" name="id_grupo" value="{{ID_GRUPO}}" />
+            <input type="file" id="uploadedFile" name="uploadedFile" />
+            <input type="button" class="button" value="Upload"      id="but_upload">
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+   // $(document).ready(function() {
+        $("#but_upload").click(function() {
+            var fd = new FormData();
+            var files = $('#uploadedFile')[0].files[0];
+            fd.append('uploadedFile', files);
+            fd.append('id_grupo',$('#id_grupo').val());
+            $.ajax({
+                url: 'export-php/upload.php',
+                type: 'post',
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(response){
+                    if(response != 0){
+                       // alert('file uploaded');
+                        ver_form_modificar("grupo",$('#id_grupo').val());
+                    }
+                    else{
+                        alert('file not uploaded');
+                    }
+                }
+            });
+        });
+  //  });
+</script>

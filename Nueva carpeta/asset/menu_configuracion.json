@@ -1,0 +1,86 @@
+[
+ {
+    "titulo": "Configuracion"
+    ,"icono":"build",
+     "permisos": "0",
+    "items": [
+
+        {
+            "link": "javascript:void(0)",
+            "descripcion": "Administrar Clientes",
+            "icono": "extension",
+            "permisos": "0",
+            "click": "ver_tabla('clientes')"
+        }, {
+            "link": "javascript:void(0)",
+            "descripcion": "Administrar Proveedores",
+            "icono": "extension",
+            "permisos": "0",
+            "click": "ver_tabla('proveedores')"
+        }, {
+            "link": "javascript:void(0)",
+            "descripcion": "Administrar Camiones",
+            "icono": "extension",
+            "permisos": "0",
+            "click": "ver_tabla('camiones')"
+        }, {
+            "link": "javascript:void(0)",
+            "descripcion": "Administrar Choferes",
+            "icono": "extension",
+            "permisos": "0",
+            "click": "ver_tabla('choferes')"
+        }
+        , {
+            "link": "javascript:void(0)",
+            "descripcion": "Agregar Localidades Habituales",
+            "icono": "extension",
+            "permisos": "0",
+            "click": "ver_tabla('v_localidades')"
+        }
+    ]
+}
+    , {
+            "titulo": "Tesoreria"
+            ,"icono":"attach_money",
+            "permisos": "1",
+            "items": [
+
+                 {
+                    "link": "javascript:void(0)",
+                    "descripcion": "Formas de Pago",
+                    "icono": "extension",
+                    "permisos": "0",
+                    "click": "ver_tabla('formas_pago')"
+                }
+               , {
+                    "link": "javascript:void(0)",
+                    "descripcion": "Movimientos de Cuentas",
+                    "icono": "extension",
+                    "permisos": "0",
+                    "click": "ver_tabla('mov_cuentas')"
+                }
+                , {
+                    "link": "javascript:void(0)",
+                    "descripcion": "Administrar de Cuentas",
+                    "icono": "extension",
+                    "permisos": "0",
+                    "click": "ver_tabla('cuentas')"
+                }
+            ]
+        }
+   , {
+        "titulo": "Sistema"
+        ,"icono":"settings",
+           "permisos": "2",
+        "items": [
+
+         {
+                "link": "javascript:void(0)",
+                "descripcion": "Administrar Usuarios",
+                "icono": "extension",
+                "permisos": "0",
+                "click": "ver_tabla('usuario')"
+            }
+        ]
+    }
+]

@@ -1,0 +1,21 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Sucursal Nro {{ CAMPOS.id_sucursal|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="sucursal"><input type="hidden" name="accion" value="add"><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="id_sucursal" name="id_sucursal" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id_sucursal|e }}">
+                                            <label class="form-label">idSucursal</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="desc_sucursal" name="desc_sucursal" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.desc_sucursal|e }}">
+                                            <label class="form-label">descSucursal</label>
+                                        </div>
+                                    </div><button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('sucursal')">Regresar</a></form></div>
+</div>
+        </div>

@@ -1,0 +1,31 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Ot_finalizada_valor Nro {{ CAMPOS.id|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="ot_finalizada_valor"><input type="hidden" name="accion" value="add"><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="id" name="id" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id|e }}">
+                                            <label class="form-label">id</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="OT" name="OT" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.OT|e }}">
+                                            <label class="form-label">OT</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="valor" name="valor" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.valor|e }}">
+                                            <label class="form-label">valor</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="fchalta" name="fchalta" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.fchalta|e }}">
+                                            <label class="form-label">fchalta</label>
+                                        </div>
+                                    </div><button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('ot_finalizada_valor')">Regresar</a></form></div>
+</div>
+        </div>

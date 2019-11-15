@@ -1,0 +1,12 @@
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th>id_grupo_ot</th>
+<th>ot</th>
+<th>id_grupo</th>
+<th>fchalta</th>
+<th></th></thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr><td>{{num.id_grupo_ot}}</td><td>{{num.ot}}</td><td>{{num.id_grupo}}</td><td>{{num.fchalta}}</td><td><button type="button" class="btn btn-default" onclick="ver_form('grupo_ot',{{num.}})"><span class="glyphicon glyphicon-search"></span></button><button type="button" class="btn btn-primary" onclick="ver_form_modificar('grupo_ot',{{num.}})"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-danger" onclick="borrar('grupo_ot',{{num.}})"><span class="glyphicon glyphicon-remove"></span></button></td></tr>{% endfor %}
+</tbody>
+</table>

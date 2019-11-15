@@ -1,0 +1,48 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Pasos Nro {{ CAMPOS._id|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+                                        <input type="hidden" name="tabla" value="pasos">
+                                        <input type="hidden" name="accion" value="add">
+
+
+
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">Desc Campo</label>
+                                           <input type="text" class="form-control input-control" id="desc_campo" name="desc_campo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.desc_campo|e }}">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">Tipo</label>
+                                           <input type="text" class="form-control input-control" id="tipo" name="tipo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.tipo|e }}">
+
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">foto</label>
+                                           <input type="number" class="form-control input-control" id="foto" name="foto" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.foto|e }}">
+
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                            <label class="form-label">Obligatorio</label>
+                                           <input type="number" class="form-control input-control" id="obligatorio" name="obligatorio" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.obligatorio|e }}">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float" style="display: none">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="_id" name="_id" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS._id|e }}">
+                                            <label class="form-label">Id</label>
+                                        </div>
+                                    </div>
+                <button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('pasos')">Regresar</a></form></div>
+</div>
+        </div>

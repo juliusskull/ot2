@@ -1,0 +1,15 @@
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead>
+<tr>
+<th></th>
+<th>#</th>
+<th>Motivo</th>
+<th>Cantidad Pasos</th>
+</thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr><td>
+    <button type="button" class="btn btn-default" onclick="ver_form('template_view',{{num.id}})"><span class="glyphicon glyphicon-search"></span></button>
+    <button type="button" class="btn btn-primary" onclick="copiar({{num.id}})"><span class="glyphicon glyphicon-copy"></span></button></td><td>{{num.id}}</td><td>{{num.motivo}}</td><td>{{num.cantidad_pasos}}</td></tr>{% endfor %}
+</tbody>
+</table>

@@ -1,0 +1,86 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Sincronizar Nro {{ CAMPOS.|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="sincronizar"><input type="hidden" name="accion" value="add"><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="id" name="id" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id|e }}">
+                                            <label class="form-label">id</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="envio" name="envio" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.envio|e }}">
+                                            <label class="form-label">envio</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="tipo" name="tipo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.tipo|e }}">
+                                            <label class="form-label">tipo</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="valor" name="valor" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.valor|e }}">
+                                            <label class="form-label">valor</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="lat" name="lat" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.lat|e }}">
+                                            <label class="form-label">lat</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="lng" name="lng" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.lng|e }}">
+                                            <label class="form-label">lng</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="fchalta" name="fchalta" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.fchalta|e }}">
+                                            <label class="form-label">fchalta</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="usuario" name="usuario" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.usuario|e }}">
+                                            <label class="form-label">usuario</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="imei" name="imei" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.imei|e }}">
+                                            <label class="form-label">imei</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="precision" name="precision" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.precision|e }}">
+                                            <label class="form-label">precision</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="gps" name="gps" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.gps|e }}">
+                                            <label class="form-label">gps</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="red" name="red" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.red|e }}">
+                                            <label class="form-label">red</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="version" name="version" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.version|e }}">
+                                            <label class="form-label">version</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="aplicacion" name="aplicacion" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.aplicacion|e }}">
+                                            <label class="form-label">aplicacion</label>
+                                        </div>
+                                    </div><div class="form-group form-float">
+                                        <div class="form-line">
+                                           <input type="text" class="form-control input-control" id="actualizada" name="actualizada" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.actualizada|e }}">
+                                            <label class="form-label">actualizada</label>
+                                        </div>
+                                    </div><button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('sincronizar')">Regresar</a></form></div>
+</div>
+        </div>

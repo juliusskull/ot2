@@ -1,0 +1,224 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Ot Nro {{ CAMPOS.id|e }}
+            </h2>
+        </div>
+<div class="body">
+<form id="myForm" action="#" method="post">
+<input type="hidden" name="tabla" value="ot">
+    <input type="hidden" name="accion" value="add">
+    <div class="form-group form-float oculto">
+                                        <div class="form-line">
+                                           <input type="number" class="form-control input-control" id="id" name="id" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id|e }}">
+                                            <label class="form-label">id</label>
+                                        </div>
+    </div>
+
+
+                                    <div class="form-line oculto">
+                                        <label for="contratista_asig">Template Titulo</label>
+                                        <select id="contratista_asig" name="contratista_asig" class="form-control">
+                                            <option value="{{ CAMPOS.id_template|e }}" >{{ CAMPOS.template_titulo|e }}</option>
+                                            {% for estado in TEMPLATES %}
+                                            <option value="{{estado.id_template}}" >{{estado.titulo}}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">Nro Ot</label>
+                                           <input type="number" class="form-control input-control" id="nro_ot" name="nro_ot" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.nro_ot|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">idLoc</label>
+                                           <input type="number" class="form-control input-control" id="id_loc" name="id_loc" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_loc|e }}">
+
+                                        </div>
+    <div class="form-line oculto">
+        <label class="form-label">idMotivo</label>
+        <input type="number" class="form-control input-control" id="id_motivo" name="id_motivo" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_motivo|e }}">
+
+    </div>
+
+
+    <div class="form-line ">
+        <label class="form-label">Motivo</label>
+        <textarea type="text" class="form-control input-control" id="motivo" name="motivo" aria-describedby="emailHelp"  placeholder=""  value="">{{ CAMPOS.motivo|e }}</textarea>
+    </div>
+    <div class="form-line ">
+        <label class="form-label">Observacion</label>
+        <textarea type="text" class="form-control input-control" id="observacion" name="observacion" aria-describedby="emailHelp"  placeholder=""  value="">{{ CAMPOS.observacion|e }}</textarea>
+    </div>
+    <div class="form-line"><label class="form-label">codEmpleadoAsig</label>
+
+        <select id="cod_empleado_asig" name="cod_empleado_asig" class="form-control">
+            <option value="{{ CAMPOS.cod_empleado_asig|e }}" >{{ CAMPOS.nombre_empleado_asig|e }}</option>
+            {% for estado in EMPLEADOS %}
+            <option value="{{estado.id}}" >{{estado.nombre}}</option>
+            {% endfor %}
+        </select>
+
+    </div>
+
+
+    <div class="form-line oculto">
+        <label class="form-label">Nombre Empleado Asig</label>
+        <input type="text" class="form-control input-control" id="nombre_empleado_asig" name="nombre_empleado_asig" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.nombre_empleado_asig|e }}">
+
+    </div>
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">localidad</label>
+                                           <input type="text" class="form-control input-control" id="localidad" name="localidad" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.localidad|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">zona</label>
+                                           <input type="text" class="form-control input-control" id="zona" name="zona" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.zona|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">idBar</label>
+                                           <input type="number" class="form-control input-control" id="id_bar" name="id_bar" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_bar|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">barrio</label>
+                                           <input type="text" class="form-control input-control" id="barrio" name="barrio" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.barrio|e }}">
+
+                                        </div>
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">idCal</label>
+                                           <input type="number" class="form-control input-control" id="id_cal" name="id_cal" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.id_cal|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">Calle</label>
+                                           <input type="text" class="form-control input-control" id="calle" name="calle" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.calle|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">Altura</label>
+                                           <input type="text" class="form-control input-control" id="altura" name="altura" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.altura|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">Cod Cuadrilla Asig</label>
+                                           <input type="number" class="form-control input-control" id="cod_cuadrilla_asig" name="cod_cuadrilla_asig" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.cod_cuadrilla_asig|e }}">
+
+                                        </div>
+
+
+
+                                        <div class="form-line oculto">
+                                            <label class="form-label">fchalta</label>
+                                           <input type="text" class="form-control input-control" id="fchalta" name="fchalta" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.fchalta|e }}">
+
+
+                                    </div>
+    <div class="form-line">
+        <label class="form-label">Actividades</label>
+        <input class="oculto" id="id_lista_activiades" value="{{MAX_ID}}" >
+        <input class="oculto" id="MAX_ID" value="{{MAX_ID}}" >
+
+        <table id="lista_actividades" style="width:100%">
+            <tr>
+                <td>#</td>
+                <th>Actividad</th>
+                <th>Tipo</th>
+                <th>Obligatoria</th>
+                <th></th>
+            </tr>
+            {% for estado in PASOS %}
+              <tr>
+                <td>{{estado._id}}</td>
+                <td>{{estado.desc_campo}}</td>
+                <td>{{estado.tipo}}</td>
+                <td>{{estado.obligatorio_desc}}</td>
+                <td><select id="activo{{estado._id}}">
+                    <option value="1">Activo</option>
+                    <option value="0">Borrar</option>
+                </select></td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+    <br>
+
+                            <div class="form-line">
+                                    </div>
+    <div id="alertaBox1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="alerta-titulo">Nueva Actividad</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="alerta-desc">
+
+                    </p>
+
+                    <div class="form-line ">
+                        <label class="form-label">Descripcion de la Actividad </label>
+                        <textarea class="form-control input-control" id="descripcion_actividad" name="descripcion_actividad" aria-describedby="emailHelp"  placeholder=""  value=""> </textarea>
+
+                    </div>
+                    <div class="form-line ">
+                        <label class="form-label">El tipo de devolucion de la actividad </label>
+                        <select id="tipo_actividad" name="tipo_actividad" class="form-control">
+                            <option value="CADENA" >CADENA</option>
+                            <option value="CANTIDAD" >CANTIDAD</option>
+                            <option value="FOTO" >FOTO</option>
+
+                        </select>
+
+                    </div>
+                    <div class="form-line ">
+                        <label class="form-label">Es Obligatoria la actividad</label>
+                        <select id="OBLI_actividad" name="tipo_actividad" class="form-control">
+                            <option value="NO" >NO</option>
+                            <option value="SI" >SI</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="add_actividad('lista_actividades',$('#descripcion_actividad').val(),$('#tipo_actividad').val(),$('#OBLI_actividad').val())">Agregar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!--<button  class="btn btn-default" onclick="alert('xx')">Agregar Actividad-1</button>-->
+     <a  href="javascript:void(0)" class="btn btn-primary" onclick="show_agregar_actividad()">Agregar Actividad</a></form></div>
+
+    <button  class="btn btn-primary" onclick="crear_tarea()">Guardar</button>
+    <a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('ot')">Regresar</a></form></div>
+</div>
+        </div>

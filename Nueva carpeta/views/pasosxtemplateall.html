@@ -1,0 +1,17 @@
+<div class="body">
+    <div class="table-responsive">
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th>#</th>
+<th>#Template</th>
+<th>Titulo template</th>
+<th>#Paso</th>
+<th>Desc Paso</th>
+<th></th></thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr><td>{{num.id_pasosxtemplate}}</td><td>{{num.id_template}}</td><td>{{num.titulo}}</td><td>{{num.id_paso}}</td><td>{{num.desc_campo}}</td><td><button type="button" class="btn btn-default" onclick="ver_form('pasosxtemplate',{{num.id_pasosxtemplate}})"><span class="glyphicon glyphicon-search"></span></button><button type="button" class="btn btn-primary" onclick="ver_form_modificar('pasosxtemplate',{{num.id_pasosxtemplate}})"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-danger" onclick="borrar('pasosxtemplate',{{num.id_pasosxtemplate}})"><span class="glyphicon glyphicon-remove"></span></button></td></tr>{% endfor %}
+</tbody>
+</table>
+    </div>
+</div>

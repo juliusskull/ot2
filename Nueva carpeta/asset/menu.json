@@ -1,0 +1,51 @@
+[
+
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Tareas",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('ot')"
+    }
+    ,
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Tareas Finalizadas",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('ot_finalizar_view')"
+    }
+    ,
+    {
+    "link": "javascript:void(0)",
+    "descripcion": "Rastreo",
+    "icono": "extension",
+    "permisos": "0",
+     "click": "ver_tabla('sincronizar')"
+    }
+    ,
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Operarios",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('operario')"
+    }
+
+    ,
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Mapa de Ruta",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "window.open('mapasRuta/index.php','_blank')"
+    }   ,
+    {
+        "link": "javascript:void(0)",
+        "descripcion": "Template",
+        "icono": "extension",
+        "permisos": "0",
+        "click": "ver_tabla('template_view')"
+    }
+
+]

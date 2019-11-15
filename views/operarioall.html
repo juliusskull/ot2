@@ -1,0 +1,19 @@
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th></th>
+<th>id</th>
+<th>nombre</th>
+<th>password</th>
+<th>imei</th>
+<th>fchalta</th>
+
+</thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr>
+    <td><button type="button" class="btn btn-default" onclick="ver_form('operario',{{num.id}})"><span class="glyphicon glyphicon-search"></span></button><button type="button" class="btn btn-primary" onclick="ver_form_modificar('operario',{{num.id}})"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-danger" onclick="borrar('operario',{{num.id}})"><span class="glyphicon glyphicon-remove"></span></button></td>
+    <td>{{num.id}}</td><td>{{num.nombre}}</td><td>{{num.password}}</td><td>{{num.imei}}</td><td>{{num.fchalta}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

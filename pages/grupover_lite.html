@@ -1,0 +1,176 @@
+<style>
+    .hm-gradient {
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    }
+    .darken-grey-text {
+        color: #2E2E2E;
+    }
+</style>
+<table>
+    <tr><td>Nro</td>
+        <td>{{ CAMPOS.id_grupo|e }}</td>
+        </tr><tr><td>Descripcion</td>
+    <td>{{ CAMPOS.descripcion|e }}</td></tr><tr><td>Fch Alta</td><td>{{ CAMPOS.fchalta|e }}</td></tr>
+</table>
+   <!-- <img src="img_girl.jpg" alt="Girl in a jacket">-->
+
+
+
+    {% for cavecera in LISTA_OT %}
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <div class="card">
+           <div class="header">
+               <h2>
+                   OT Nro {{cavecera.nro_ot}} Fch Ini{{cavecera.fechainicio}} Fch Fin{{cavecera.fechafinalizo}}
+               </h2>
+               <ul class="header-dropdown m-r--5">
+                   <li class="dropdown">
+                       <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                           <i class="material-icons">more_vert</i>
+                       </a>
+                       <ul class="dropdown-menu pull-right">
+                           <!--<li><a href="javascript:void(0);">Action</a></li>
+                           <li><a href="javascript:void(0);">Another action</a></li>
+                           <li><a href="javascript:void(0);">Something else here</a></li>-->
+                       </ul>
+                   </li>
+               </ul>
+           </div>
+           <div class="body">
+               <div id="list-imagenes-ot" class="list-unstyled row clearfix">
+                   {% for aa in IMAGENES %}
+                   {% for ee in aa %}
+
+                   {% if ee.OT== cavecera.nro_ot %}
+                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
+                       <a href="img/{{ee.NOMBRE}}" data-sub-html="Demo Description">
+                           <img class="img-responsive thumbnail" src="img/{{ee.NOMBRE}}">
+                       </a>
+                   </div>
+                   {% endif%}
+                   {% endfor %}
+                   {% endfor %}
+               </div>
+           </div>
+       </div>
+   </div>
+   </div>
+
+
+</div>
+    {% endfor %}
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Materiales usados
+            </h2>
+            <ul class="header-dropdown m-r--5">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <!--<li><a href="javascript:void(0);">Action</a></li>
+                        <li><a href="javascript:void(0);">Another action</a></li>
+                        <li><a href="javascript:void(0);">Something else here</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
+
+                <div class="col-md-12">
+
+                    <table id="lista_materiales_ot"  class="table table-bordered table-striped table-hover js-basic-example dataTable" style="width:100%">
+                        <thead>
+                        <tr>
+                            <td>#</td>
+                            <th>Descripcion</th>
+                            <th>Cantidad</th>
+                            <th>Usuario</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for estado in LISTA_MATERIALES_OT %}
+                        <tr id="filaMateriales{{estado.id_material_ot}}">
+                            <td>{{estado.id_material_ot}}</td>
+                            <td>{{estado.codigo}}</td>
+                            <td>{{estado.cantidad}}</td>
+                            <td>{{estado.usuario}}</td>
+
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Pasos Asignados
+            </h2>
+            <ul class="header-dropdown m-r--5">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <!--<li><a href="javascript:void(0);">Action</a></li>
+                        <li><a href="javascript:void(0);">Another action</a></li>
+                        <li><a href="javascript:void(0);">Something else here</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <div id="lista_pasos_ot_div" class="list-unstyled row clearfix">
+
+                <div class="col-md-12">
+
+                    <table id="lista_pasos_ot"  class="table table-bordered table-striped table-hover js-basic-example dataTable" style="width:100%">
+                        <thead>
+                        <tr>
+                            <th>OT</th>
+                            <th>Descripcion</th>
+                            <th>Tipo</th>
+                            <th>Valor</th>
+                            <th>Realizado</th>
+                            <th>Fecha Alta</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for key,paso in PASOS %}
+                        <tr>
+                            <td>{{paso.OT}}</td>
+                            <td>{{paso.desc_campo}}</td>
+                            <td>{{paso.tipo}}</td>
+                            <td>{{paso.valor}}</td>
+                            <td>{{paso.REALIZADO}}</td>
+                            <td>{{paso.fchalta}}</td>
+
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+

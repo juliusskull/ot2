@@ -1,0 +1,119 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Grupo Nro {{ CAMPOS.id_grupo|e }}
+            </h2>
+        </div>
+        <div class="body">
+<!--<form id="myForm" action="app/" method="post">-->
+        <div>
+<input type="hidden" name="tabla" value="grupo">
+            <input type="hidden" name="accion" value="add"><div class="form-group form-float">
+                                        <div class="form-line" style ="display:none">
+                                           <input type="number" class="form-control input-control" id="id_grupo" name="id_grupo" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id_grupo|e }}">
+                                            <label class="form-label">idGrupo</label>
+                                        </div>
+                                    </div>
+
+                                        <div class="form-line">
+                                            <label class="form-label">Descripcion</label>
+                                           <input type="text" class="form-control input-control" id="descripcion" name="descripcion" aria-describedby="emailHelp"  placeholder="" required value="{{ CAMPOS.descripcion|e }}">
+
+                                        </div>
+
+
+                                        <div class="form-line">
+                                            <label class="form-label">Fecha de Alta</label>
+                                           <input type="text" class="form-control input-control" id="fchalta" name="fchalta" aria-describedby="emailHelp"  placeholder=""  value="{{ CAMPOS.fchalta|e }}">
+
+                                        </div>
+
+            <hr style="margin-left: 0;    text-align: left;    width: 50%;"/>
+    <!--<button  class="btn btn-primary" >Agregar Orden de trabajo (recien creada o iniciada)</button>-->
+            <button  class="btn btn-primary" onclick="form_grupo_add_archivo_ot({{ CAMPOS.id_grupo }})">Agregar desde Archivo Pasos .csv</button>
+
+            <div class="form-line " id="lista_ot_nueva_div">
+        <label class="form-label">Agregar Orden de trabajo (recien creada o iniciada) </label>
+        <select id="lista_ot_nueva" name="lista_ot_nueva" class="form-control">
+            {% for estado in LISTA_OT_NEW %}
+            <option value="{{estado.nro_ot}}" >{{estado.motivo}}</option>
+            {% endfor %}
+
+        </select>
+        <button  class="btn btn-primary" onclick="add_grupo_ot({{ CAMPOS.id_grupo }})" >Agregar</button>
+    </div>
+
+    <div class="form-line">
+        <label class="form-label">Ordenes de Trabajo</label>
+
+
+        <table id="lista_ordenes" style="width:100%">
+            <tr>
+                <td>#</td>
+                <th>Nro OT</th>
+                <th>Motivo</th>
+
+                <th></th>
+            </tr>
+            {% for estado in LISTA_OT %}
+            <tr id="fila{{estado.id_grupo_ot}}">
+                <td>{{estado.id_grupo_ot}}</td>
+                <td>{{estado.nro_ot}}</td>
+                <td>{{estado.motivo}}</td>
+                <td>
+                    <button  class="btn btn-primary" onclick="borrar_grupo_ot({{estado.id_grupo_ot}})">Eliminar</button>
+                </select></td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+            <hr style="margin-left: 0;    text-align: left;    width: 50%;"/>
+<!-------------------------------------------------------------------------------------->
+            <button  class="btn btn-primary" onclick="form_grupo_add_archivo({{ CAMPOS.id_grupo }})">Agregar desde Archivo .csv</button>
+
+            <div class="form-line " id="lista_materiales_ot_nueva_div">
+                <label class="form-label">Agregar nuevo Material </label>
+                <label class="form-label">Descripcion</label>
+                <input type="text" class="form-control input-control" id="descripcion_material" name="descripcion" aria-describedby="emailHelp"  placeholder="" required value="">
+                <label class="form-label">Cantidad</label>
+                <input type="text" class="form-control input-control" id="cantidad_material" name="descripcion" aria-describedby="emailHelp"  placeholder="" required value="0">
+
+                <button  class="btn btn-primary" onclick="add_grupo_ot_material({{ CAMPOS.id_grupo }})" >Agregar</button>
+            </div>
+
+            <div class="form-line">
+                <label class="form-label">Ordenes de Trabajo</label>
+
+                 <table id="lista_materiales_ot" style="width:100%">
+                    <tr>
+                        <td>#</td>
+                        <th>Descripcion</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                    </tr>
+                    {% for estado in LISTA_MATERIALES_OT %}
+                    <tr id="filaMateriales{{estado.id_material_ot}}">
+                        <td>{{estado.id_material_ot}}</td>
+                        <td>{{estado.codigo}}</td>
+                        <td>{{estado.cantidad}}</td>
+                        <td>
+                            <button  class="btn btn-primary" onclick="borrar_grupo_ot_material({{estado.id_material_ot}})">Eliminar</button>
+                         </td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+
+            </div>
+
+    <!--<button  class="btn btn-primary" type="submit">Guardar</button>--><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('grupo')">Regresar</a>
+</div>
+    </div>
+</div>
+        </div>
+
+
+<!-- Bootstrap Core Js -->

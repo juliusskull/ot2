@@ -1,0 +1,45 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="card">
+        <div class="header">
+            <h2>
+                Pasosxtemplate Nro {{ CAMPOS.id_pasosxtemplate|e }}
+            </h2>
+        </div><div class="body">
+<form id="myForm" action="app/" method="post">
+<input type="hidden" name="tabla" value="pasosxtemplate"><input type="hidden" name="accion" value="add">
+
+    <div class="form-group form-line oculto">
+                                        <div class="form-control">
+                                            <label class="form-label">idPasosxtemplate</label>
+                                           <input type="number" class="form-control input-control" id="id_pasosxtemplate" name="id_pasosxtemplate" aria-describedby="emailHelp"  readonly="readonly"  placeholder="" required value="{{ CAMPOS.id_pasosxtemplate|e }}">
+
+                                        </div>
+     </div>
+
+
+
+
+
+    <div class="form-line">
+        <label for="id_paso">Paso</label>
+        <select id="id_paso" name="id_paso" class="form-control">
+            <option value="{{ CAMPOS.id_paso|e }}" >{{ CAMPOS.desc_campo|e }}</option>
+            {% for estado in PASOS %}
+            <option value="{{estado.id_paso}}" >{{estado.desc_campo}}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="form-line">
+        <label for="id_template">Template Titulo</label>
+        <select id="id_template" name="id_template" class="form-control">
+            <option value="{{ CAMPOS.id_template|e }}" >{{ CAMPOS.titulo|e }}</option>
+            {% for estado in TEMPLATES %}
+            <option value="{{estado.id_template}}" >{{estado.titulo}}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button  class="btn btn-primary" type="submit">Guardar</button><a  href="javascript:void(0)" class="btn btn-primary" onclick="ver_tabla('pasosxtemplate')">Regresar</a></form></div>
+</div>
+        </div>

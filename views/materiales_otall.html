@@ -1,0 +1,15 @@
+<table id="example" class="table table-bordered table-striped table-hover js-basic-example dataTable" cellspacing="0" width="100%">
+<thead> <tr>
+<th>#</th>
+<th>codigo</th>
+<th>Material Desc</th>
+<th>ot</th>
+<th>cantidad</th>
+<th>usuario</th>
+<th>fchalta</th>
+<th></th></thead>
+<tbody>
+{% for num in CAMPOS %}
+<tr><td>{{num.id_material_ot}}</td><td>{{num.codigo}}</td><td>{{num.desc_material}}</td><td>{{num.ot}}</td><td>{{num.cantidad}}</td><td>{{num.usuario}}</td><td>{{num.fchalta}}</td><td><button type="button" class="btn btn-default" onclick="ver_form('materiales_ot',{{num.id_material_ot}})"><span class="glyphicon glyphicon-search"></span></button><button type="button" class="btn btn-primary" onclick="ver_form_modificar('materiales_ot',{{num.id_material_ot}})"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-danger" onclick="borrar('materiales_ot',{{num.id_material_ot}})"><span class="glyphicon glyphicon-remove"></span></button></td></tr>{% endfor %}
+</tbody>
+</table>
